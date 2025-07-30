@@ -1,0 +1,36 @@
+containers is an widget , we can use for ui designs 
+it can use under the child 
+child :container
+inside the container , we can give color , alignment , height , width , backgrounds , paddings , font styles , etcc..
+we can do decorations using box decorations 
+also do borderradius 
+
+  code
+
+  import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+          height : 200,
+          width : 200,
+          alignment : Alignment.center,
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color:Colors.green,),
+          
+          child:Text("HI JOYCE",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+          ),
+        ),
+      ),
+    );
+  }
+}
