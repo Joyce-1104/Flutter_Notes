@@ -1,0 +1,7 @@
+everything you see in a app is a widget
+widget is an fundamental building blocks and layout models
+in a standard flutter app, usually wrap the widges in a MATERIal app
+inside material app, we can give the body , title ,appl bar , child 
+two types of widgets ae there 
+1.statelesswidget - > no change is happen -> we define it as class and we overides it with build 
+2. statefullwidget -> change will happern -> we define it in class and again create the subclsss and in that subclass , overrides with the build 
